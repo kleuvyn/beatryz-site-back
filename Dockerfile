@@ -1,10 +1,11 @@
-FROM rasa/rasa:3.7.1-full
+FROM rasa/rasa:3.7.x-full
 
 WORKDIR /app
 
 COPY . /app
 
 COPY requirements.txt .
+
 RUN pip install -r requirements.txt --no-cache-dir
 
 RUN rasa train
