@@ -8,7 +8,7 @@ COPY requirements.txt .
 
 RUN pip install -r requirements.txt --no-cache-dir
 
-RUN rasa train
+RUN rasa train --data chat/data --domain chat/domain.yml --config chat/config.yml
 
 EXPOSE 5005
 
