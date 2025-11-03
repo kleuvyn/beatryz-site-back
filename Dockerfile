@@ -5,11 +5,11 @@ WORKDIR /app
 COPY . /app
 COPY requirements.txt .
 
-RUN pip install --no-cache-dir -r requirements.txt || true
+RUN pip install --no-cache-dir -r requirements.txt
 
 RUN rasa train --data chat/data --domain chat/domain.yml --config chat/config.yml
 
-ENV PORT=8000
+ENV PORT=${PORT:-8000}
 EXPOSE $PORT
 
-CMD rasa run --enable-api --cors "*" --port $PORT --host 0.0.0.0
+CMD ["sh", "-c", "rasa run --enable-api --cors '*' --port $PORT --host 0.0.0.0"]
