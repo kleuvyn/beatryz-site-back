@@ -1,4 +1,4 @@
-FROM rasa/rasa:3.7.0-full
+FROM rasa/rasa:3.7.x-full
 
 WORKDIR /app
 
