@@ -1,0 +1,138 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    ola
+    oi
+    e ai
+    bom dia
+    boa noite
+    salve
+
+- intent: sobre_criador
+  examples: |
+    quem te criou
+    quem é sua dona
+    me fala sobre a beatryz kleuvyn
+    qual a profissão dela
+    qual o foco dela
+    como ela resolve problemas
+
+- intent: sobre_habilidades
+  examples: |
+    quais as linguagens que ela usa
+    qual a stack favorita
+    ela sabe python
+    fala sobre as ferramentas
+    bibliotecas que ela conhece
+    ela tem experiencia com ciencia de dados
+    quais as habilidades dela
+
+- intent: sobre_hobbies
+  examples: |
+    o que ela faz no tempo livre
+    quais os hobbies dela
+    ela gosta de natureza
+    onde ela é voluntaria
+    quais as flores favoritas
+
+- intent: sobre_musica
+  examples: |
+    que tipo de musica ela escuta
+    ela gosta de rock
+    e mpb
+    ela gosta de bts
+    quais os generos musicais
+
+- intent: sobre_livros
+  examples: |
+    quais os livros favoritos dela
+    ela gosta de ler
+    me fala dos miseraveis
+    morro dos ventos uivantes
+    
+- intent: sobre_comida
+  examples: |
+    o que ela gosta de comer
+    ela tem alguma restricao
+    ela gosta de chocolate
+    o que ela bebe
+
+- intent: goodbye
+  examples: |
+    tchau
+    ate mais
+    adeus
+    flw
+
+- intent: thank
+  examples: |
+    obrigado
+    valeu
+    agradeco
+    que bom
+
+- intent: sobre_matematica
+  examples: |
+    o que ela acha de matematica
+    ela gosta de estatistica
+    ela gosta de logica de programacao
+    ela quer ser cientista de dados
+    qual o proximo objetivo de estudo dela
+    ela quer fazer mestrado
+    me fala sobre a teoria dos numeros
+    qual o artigo que ela quer escrever
+    ela se importa de ser analista de dados
+
+- intent: sobre_projeto
+  examples: |
+    qual o site dela
+    me fala sobre o encaixe certo
+    ela tem um projeto
+    qual a url
+    site para desenvolvedores
+
+- intent: perguntar_estudos
+  examples: |
+    o que ela estuda no momento
+    qual a área de estudo dela
+    ela está fazendo faculdade?
+    o que ela tem aprendido
+    qual a formação acadêmica da Beatryz
+
+- intent: perguntar_stack_dados
+  examples: | # <--- CORRIGIDO: O formato de lista é garantido pelo '|'
+    quais tecnologias ela domina?
+    qual é o stack de dados dela?
+    ela trabalha com power bi?
+    ela usa SQL?
+    me fale sobre os dashboards que ela cria
+    ela tem experiência em análise de dados?
+
+- intent: perguntar_ia_conversacional
+  examples: |
+    me fale sobre a experiência dela com rasa
+    ela usa n8n?
+    o que ela sabe sobre ia conversacional?
+    ela já integrou chatbots?
+
+- intent: perguntar_customer_experience
+  examples: |
+    o que ela sabe sobre customer experience?
+    ela foca em CX nos projetos?
+    ela tem conhecimento em jornada do cliente?
+
+- intent: perguntar_portfolio
+  examples: |
+    onde posso ver o portfólio dela?
+    qual o github?
+    ela tem projetos online?
+    me mostre o código dela
+
+- intent: perguntar_contato
+  examples: |
+    qual o linkedin dela?
+    como eu entro em contato?
+    qual o email da Beatryz?
+    me passe o telefone de contato

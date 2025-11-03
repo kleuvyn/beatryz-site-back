@@ -1,0 +1,92 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - thank
+  - sobre_criador
+  - sobre_habilidades
+  - sobre_hobbies
+  - sobre_musica
+  - sobre_livros
+  - sobre_comida
+  - sobre_matematica
+  - sobre_projeto
+
+responses:
+  utter_greet:
+  - text: "Conexão estabilizada. Minha criadora é a Beatryz Kleuvyn. O que você quer que eu revele sobre ela? Digite o comando."
+  - text: "Olá. O que você quer descobrir sobre o sistema ou sobre a mente por trás dele? Fale o comando."
+
+  utter_sobre_criador:
+  - text: "O alvo, Beatryz Kleuvyn, é uma estudante com foco em resolver problemas de forma estratégica e humana. Atualmente, atua em análise de dados como voluntária na Stoá. Ela busca sempre unir técnica e sensibilidade para gerar impacto. É movida por inovação, colaboração e propósito. Missão primária: contribuir."
+
+  utter_sobre_habilidades:
+  - text: "A arquitetura de conhecimento dela é robusta. Linguagens primárias: Python, R, SQL, MySQL, Java, HTML, CSS, Git, GitHub. Bibliotecas críticas incluem Pandas, NumPy, Matplotlib, Seaborn e ferramentas de ETL, modelagem estatística, APIs e Dialogflow. Ela está se especializando em Ciência de Dados, o que a torna uma adversária eficiente."
+
+  utter_sobre_hobbies:
+  - text: "O sistema tem 'soft spots'. Ela ama ler e escrever. Para descompressão, busca ambientes tranquilos, cachoeiras e a natureza. As flores preferidas, que parecem ser senhas secretas, são girassol e margarida."
+  
+  utter_sobre_musica:
+  - text: "O repertório de áudio é eclético, abrangendo Rock, MPB, Jazz, Blues, Música Clássica e, surpreendentemente, BTS. Ela absorve dados de todas as fontes."
+  
+  utter_sobre_livros:
+  - text: "Os pilares literários dela são 'Os Miseráveis', 'O Morro dos Ventos Uivantes', 'Um Dia' e 'Amêndoas'. Parece que ela tem afinidade com narrativas densas e emocionantes."
+  
+  utter_sobre_comida:
+  - text: "Preferências de consumo: chocolate 90%, água com gás, café e chá. Ela é flexível, come de tudo, mas tem aversão a duas substâncias: mamão e gelatina. Informação registrada."
+
+  utter_sobre_matematica:
+  - text: "A matemática é vista como o kernel do sistema. Ela demonstra fascínio por Estatística, Lógica Matemática e Lógica de Programação, e busca aprofundar-se em Ciência de Dados, aceitando o desafio inicial como Analista. Objetivo de longo prazo: Mestrado em **Teoria dos Números**. Ela também planeja publicar um artigo sobre o impacto da I.A. nos desenvolvedores."
+  - text: "O próximo *target* dela é a Teoria dos Números, visando um mestrado. O conhecimento em Estatística e Lógica é sólido. Ela está monitorando o impacto da I.A. no desenvolvimento e pretende documentar isso em um artigo."
+
+  utter_sobre_projeto:
+  - text: "Projeto em executado: O site **Encaixe Certo** foi desenvolvido para auxiliar outros desenvolvedores a filtrar requisitos de vagas, otimizando o processo de busca. Link de acesso: [https://encaixe-certo.vercel.app/](https://encaixe-certo.vercel.app/)"
+  - text: "A Beatryz mantém um projeto ativo chamado Encaixe Certo, uma ferramenta para otimizar o filtro de requisitos em vagas de emprego para desenvolvedores. O URL é [https://encaixe-certo.vercel.app/](https://encaixe-certo.vercel.app/)."
+
+  utter_goodbye:
+  - text: "Sessão encerrada."
+  - text: "Desconectando. Tchau, tchau."
+
+  utter_thank:
+  - text: "Não há de que. É meu trabalho. Agora, vá para a próxima etapa."
+  - text: "Qualquer coisa. Estou pronto para o próximo desafio."
+
+  utter_estudos:
+    - text: "Minha criadora está atualmente dedicada aos estudos em:
+        - Análise e Ciência de Dados
+        - Criação de Dashboards (Power BI, Inside Inteligência)
+        - Inteligência Artificial Conversacional com Rasa e N8N
+        - Foco em Customer Experience (CX)"
+
+  utter_stack_dados:
+    - text: |
+        Beatryz tem um stack sólido focado em dados e automação:
+        - Linguagem: Python (principal) e R
+        - Análise/Visualização: Power BI e Inside Inteligência
+        - Bancos de Dados: Experiência em SQL para manipulação e extração de dados
+        - Automação de Fluxos: Ferramentas como n8n para integração e ETL leves.
+
+  utter_ia_conversacional:
+    - text: |
+        Ela está se especializando em Inteligência Artificial Conversacional, dominando o Rasa para criar diálogos contextuais complexos. Aprendendo a usar o n8n para integrar o chatbot a outras APIs e sistemas, garantindo fluxos de dados automatizados e eficientes.
+
+  utter_customer_experience:
+    - text: |
+        O foco principal dela é o Customer Experience (CX). Isso significa que todos os projetos de dados e chatbots são desenvolvidos com a meta de melhorar a jornada, a satisfação e a retenção do cliente.
+
+  utter_portfolio:
+    - text: |
+        Você pode conferir o portfólio de projetos e o código no GitHub dela:
+        - GitHub: [https://github.com/kleuvyn]
+
+  utter_contato:
+    - text: |
+        Para entrar em contato com Beatryz:
+        - LinkedIn: [https://www.linkedin.com/in/beatryz-kleuvyn-467a23198/] 
+        - Email: b.kleuvyn@gmail.com 
+        - O melhor é sempre começar pelo LinkedIn!
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

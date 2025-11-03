@@ -1,0 +1,43 @@
+version: "3.1"
+
+stories:
+
+- story: Caminho de Informação Completa
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: sobre_criador
+  - action: utter_sobre_criador
+  - intent: sobre_habilidades
+  - action: utter_sobre_habilidades
+  - intent: sobre_matematica
+  - action: utter_sobre_matematica
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: Caminho de Foco Pessoal
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: sobre_hobbies
+  - action: utter_sobre_hobbies
+  - intent: sobre_musica
+  - action: utter_sobre_musica
+  - intent: thank
+  - action: utter_thank
+
+- story: Caminho de Projeto e Livros
+  steps:
+  - intent: sobre_projeto
+  - action: utter_sobre_projeto
+  - intent: sobre_livros
+  - action: utter_sobre_livros
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: Caminho de Comida e Despedida
+  steps:
+  - intent: sobre_comida
+  - action: utter_sobre_comida
+  - intent: goodbye
+  - action: utter_goodbye

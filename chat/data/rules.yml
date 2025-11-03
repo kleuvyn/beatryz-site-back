@@ -1,0 +1,87 @@
+version: "3.1"
+
+rules:
+- rule: Saudar o usuário
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+- rule: Responder perguntas sobre a criadora
+  steps:
+  - intent: sobre_criador
+  - action: utter_sobre_criador
+
+- rule: Responder perguntas sobre habilidades
+  steps:
+  - intent: sobre_habilidades
+  - action: utter_sobre_habilidades
+
+- rule: Responder perguntas sobre hobbies
+  steps:
+  - intent: sobre_hobbies
+  - action: utter_sobre_hobbies
+
+- rule: Responder perguntas sobre musica
+  steps:
+  - intent: sobre_musica
+  - action: utter_sobre_musica
+
+- rule: Responder perguntas sobre livros
+  steps:
+  - intent: sobre_livros
+  - action: utter_sobre_livros
+
+- rule: Responder perguntas sobre comida
+  steps:
+  - intent: sobre_comida
+  - action: utter_sobre_comida
+
+- rule: Responder perguntas sobre matematica
+  steps:
+  - intent: sobre_matematica
+  - action: utter_sobre_matematica
+  
+- rule: Responder perguntas sobre projeto
+  steps:
+  - intent: sobre_projeto
+  - action: utter_sobre_projeto
+  
+- rule: Despedir do usuário
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Agradecer
+  steps:
+  - intent: thank
+  - action: utter_thank
+
+- rule: Responder sobre Estudos
+  steps:
+  - intent: perguntar_estudos
+  - action: utter_estudos
+
+- rule: Responder sobre Stack de Dados
+  steps:
+  - intent: perguntar_stack_dados
+  - action: utter_stack_dados
+
+- rule: Responder sobre IA Conversacional
+  steps:
+  - intent: perguntar_ia_conversacional
+  - action: utter_ia_conversacional
+
+- rule: Responder sobre Customer Experience
+  steps:
+  - intent: perguntar_customer_experience
+  - action: utter_customer_experience
+
+- rule: Responder sobre Portfólio
+  steps:
+  - intent: perguntar_portfolio
+  - action: utter_portfolio
+
+- rule: Responder sobre Contato
+  steps:
+  - intent: perguntar_contato
+  - action: utter_contato
