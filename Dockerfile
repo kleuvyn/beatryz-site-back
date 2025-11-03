@@ -12,4 +12,4 @@ RUN rasa train --data chat/data --domain chat/domain.yml --config chat/config.ym
 
 EXPOSE 5005
 
-CMD ["rasa", "run", "--enable-api", "--cors", "*", "--debug"]
+CMD ["run", "--enable-api", "--cors", "*", "--debug"]
