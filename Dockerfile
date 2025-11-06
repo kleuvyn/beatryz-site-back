@@ -1,9 +1,15 @@
-FROM rasa/rasa:<RASA_VERSION>-full
+FROM rasa/rasa-sdk:<SDK_VERSION>
 
 WORKDIR /app
 
-COPY . /app
+COPY actions/requirements-actions.txt ./
 
-RUN pip install -r requirements.txt
+USER root
 
-CMD ["rasa", "run", "--enable-api", "--cors", "*"]
+RUN pip install -r requirements-actions.txt
+
+COPY ./actions /app/actions
+
+USER 1001
+
+CMD ["rasa", "run", "actions"]
