@@ -1,4 +1,4 @@
-FROM rasa/rasa:3.14.2-full AS build
+FROM rasa/rasa:latest AS build
 
 USER root
 
