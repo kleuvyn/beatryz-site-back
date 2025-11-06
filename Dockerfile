@@ -9,4 +9,4 @@ EXPOSE 5005
 
 USER 1001
 
-CMD ["run", "--enable-api", "--cors", "*", "--host", "0.0.0.0", "--port", "5005"]
+CMD rasa run --enable-api --cors "*" --host 0.0.0.0 --port ${PORT:-5005}
