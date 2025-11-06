@@ -10,4 +10,3 @@ USER 1001
 
 EXPOSE 5005
 
-CMD rasa run --enable-api --cors "*" --host 0.0.0.0 --port $PORT
