@@ -1,4 +1,4 @@
-FROM rasa/rasa:3.10.0-full AS build
+FROM rasa/rasa:3.14.2-full AS build
 
 USER root
 
@@ -6,14 +6,8 @@ COPY . /app
 
 WORKDIR /app
 
-RUN pip install --no-cache-dir -r requirements.txt
-
-FROM rasa/rasa:3.10.0-full
-
-WORKDIR /app
-
-COPY --from=build /app /app
+USER 1001
 
 EXPOSE 5005
 
-CMD ["rasa", "run", "--enable-api", "--cors", "*", "--port", "5005", "--endpoints", "endpoints.yml"]
+CMD ["rasa", "run", "--enable-api", "--cors", "*", "--host", "0.0.0.0", "-p", "5005"]
