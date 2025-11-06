@@ -1,15 +1,19 @@
-FROM rasa/rasa-sdk:<SDK_VERSION>
-
-WORKDIR /app
-
-COPY actions/requirements-actions.txt ./
+FROM rasa/rasa:3.10.0-full AS build
 
 USER root
 
-RUN pip install -r requirements-actions.txt
+COPY . /app
 
-COPY ./actions /app/actions
+WORKDIR /app
 
-USER 1001
+RUN pip install --no-cache-dir -r requirements.txt
 
-CMD ["rasa", "run", "actions"]
+FROM rasa/rasa:3.10.0-full
+
+WORKDIR /app
+
+COPY --from=build /app /app
+
+EXPOSE 5005
+
+CMD ["rasa", "run", "--enable-api", "--cors", "*", "--port", "5005", "--endpoints", "endpoints.yml"]
